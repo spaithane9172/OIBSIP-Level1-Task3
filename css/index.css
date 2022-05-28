@@ -1,0 +1,156 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url("../img/bg.jpg") no-repeat;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h2{
+    text-align: center;
+    font-size: 3vw;
+    text-shadow: 1px 1px 10px white;
+    font-weight: bold;
+    transition: 1s;
+}
+h2:hover{
+    text-shadow: 1px 1px 20px blue;
+    color: white;
+    transform: scale(1.02,1.02);
+}
+.main-container{
+    width: 50vw;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main-container h3{
+    font-size: 2vw;
+    padding: 0;
+    margin: 0;
+}
+.radioBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5vh;
+}
+.radioBtn label{
+    margin-right: 2vw;
+    font-size: 1.5vw;
+}
+.main-container input[type=number]{
+    width: 30vw;
+    background: none;
+    height: 5vh;
+    margin-bottom: 5vh;
+    padding-left: 2vw;
+    border: none;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 1.3vw;
+}
+.main-container input[type=number]:hover{
+    box-shadow: 1px 1px 10px blue;
+}
+.main-container button{
+    background: none;
+    width: 10vw;
+    height: 5vh;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 1.2vw;
+    background-color: lightgray;
+    box-shadow: 1px 1px 10px black;
+    margin-bottom: 5vh;
+
+}
+.main-container button:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.1,1.1);
+    box-shadow: 1px 1px 10px white;
+}
+@media (max-width:992px) and (min-width:768px){
+    .main-container h3{
+        font-size: 2.5vw;
+    }
+    .radioBtn label{
+        font-size: 2vw;
+    }
+    .main-container input[type=number]{
+        width: 40vw;
+        height: 6vh;
+        font-size: 1.8vw;
+    }
+    .main-container button{
+        width: 15vw;
+        height: 6vh;
+        font-size: 1.7vw;
+    
+    }
+}
+@media(max-width:768px){
+    .main-container{
+        width: 60vw;
+    }
+    h2{
+        font-size: 5vw;
+    }
+    .radioBtn{
+        margin-bottom: 3vh;
+    }
+    .main-container h3{
+        font-size: 3vw;
+    }
+    .radioBtn label{
+        font-size: 2.5vw;
+    }
+    .main-container input[type=number]{
+        width: 40vw;
+        height: 6vh;
+        font-size: 1.8vw;
+    }
+    .main-container button{
+        width: 15vw;
+        height: 6vh;
+        font-size: 1.7vw;
+    
+    }
+}
+@media(max-width:450px){
+    .main-container{
+        width: 80vw;
+    }
+    h2{
+        font-size: 6vw;
+    }
+    .radioBtn{
+        margin-bottom: 3vh;
+    }
+    .main-container h3{
+        font-size: 5vw;
+    }
+    .radioBtn label{
+        font-size: 3.5vw;
+    }
+    .main-container input[type=number]{
+        width: 50vw;
+        height: 5vh;
+        font-size: 3vw;
+    }
+    .main-container button{
+        width: 30vw;
+        height: 5vh;
+        font-size: 1.7vw;
+    
+    }
+}
